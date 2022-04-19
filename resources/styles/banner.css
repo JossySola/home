@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Kaushan Script', cursive;
+    src: url('../fonts/KaushanScript-Regular.ttf');
+} 
+
+#jossy_banner_about {
+    color: #FAEBD7;
+    background-color: #011C3E;
+    font-family: 'Kaushan Script';
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#jossy_banner_about a {
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    right: 15px;
+    bottom: 6px;
+}
+
+#jossy_banner {
+    color: #FAEBD7;
+    background-color: #011C3E;
+    font-family: 'Kaushan Script';
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    padding: 5px 0;
+    position: relative;
+    /*z-index: 10;*/
+    top: 0;
+    left: 0;
+    right: 0;
+}
