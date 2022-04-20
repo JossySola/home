@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Lato Light';
+    src: url(../fonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato Bold';
+    src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: 'Lato Italic';
+    src: url(../fonts/Lato/Lato-Italic.ttf);
+}
+@font-face {
+    font-family: 'Lato Light Italic';
+    src: url(../fonts/Lato/Lato-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(../fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf);
+}
+@font-face {
+    font-family: 'Source Code Pro Italic';
+    src: url(../fonts/Source_Code_Pro/static/SourceCodePro-Italic.ttf);
+}
+@font-face {
+    font-family: 'Source Code Pro Bold';
+    src: url(../fonts/Source_Code_Pro/static/SourceCodePro-Bold.ttf);
+}
+@font-face {
+    font-family: 'Source Code Pro XLI';
+    src: url(../fonts/Source_Code_Pro/static/SourceCodePro-ExtraLightItalic.ttf);
+}
+@font-face {
+    font-family: 'Source Code Pro XBI';
+    src: url(../fonts/Source_Code_Pro/static/SourceCodePro-ExtraBoldItalic.ttf);
+}

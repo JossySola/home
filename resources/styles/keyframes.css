@@ -1,0 +1,8 @@
+@keyframes insertionPoint {
+    from {
+        color: white;
+    }
+    to {
+        color: #264B6C;
+    }
+}

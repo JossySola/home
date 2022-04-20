@@ -1,5 +1,57 @@
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: content-box;
+}
+html {
+    background-color: #264b6c;
+}
+body {
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+a {
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem;
+}
+h1 {
+    margin-top: 2rem;
+    font-family: 'Source Code Pro', monospace;
+}
+h2 {
+    font-family: 'Source Code Pro XLI', monospace;
+}
+h2 span {
+    font-family: 'Source Code Pro XBI', monospace;
+    font-style: italic;
+    animation-name: insertionPoint;
+    animation-duration: 200ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+header {
+    text-align: center;
+}
+
+
+
+.options {
+    font-size: 1rem;
+    font-family: Calibri;
+    color: white;
+    width: 100%;
+    padding: 3px 0;
+    text-align: center;
+}
+.language {
+    background-color: #262626;
+}
+.accessibility {
+    background-color: #3f3f3f;
 }
