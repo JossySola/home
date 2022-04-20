@@ -24,8 +24,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.0469406"
-     inkscape:cx="128.46956"
+     inkscape:zoom="2.0938812"
+     inkscape:cx="260.52099"
      inkscape:cy="156.6469"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -37,33 +37,33 @@
      id="defs2">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient2602">
+       id="linearGradient2086">
       <stop
-         style="stop-color:#806600;stop-opacity:1;"
+         style="stop-color:#aa8800;stop-opacity:1;"
          offset="0"
-         id="stop2598" />
+         id="stop2082" />
       <stop
-         style="stop-color:#806600;stop-opacity:0;"
+         style="stop-color:#aa8800;stop-opacity:0;"
          offset="1"
-         id="stop2600" />
+         id="stop2084" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient2602"
-       id="linearGradient1019"
-       x1="-53.921165"
-       y1="41.565235"
-       x2="-53.976788"
-       y2="26.299421"
+       xlink:href="#linearGradient2086"
+       id="linearGradient2088"
+       x1="102.81409"
+       y1="443.96503"
+       x2="102.81409"
+       y2="33.332836"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient2602"
-       id="linearGradient2604"
-       x1="96.431198"
-       y1="321.27179"
-       x2="96.431198"
-       y2="144.32408"
+       xlink:href="#linearGradient2086"
+       id="linearGradient1562"
+       x1="-27.325815"
+       y1="97.87088"
+       x2="-27.325815"
+       y2="0"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
@@ -87,20 +87,20 @@
        y="0.15764116"
        rx="7.7671035e-17" />
     <rect
-       style="fill:url(#linearGradient1019);stroke-width:0.7425;fill-opacity:1"
-       id="#806600"
-       width="184.87126"
-       height="7.3588624"
-       x="-117.5727"
-       y="24.822325"
+       style="fill:url(#linearGradient2088);stroke-width:0.7425;fill-opacity:1"
+       id="rect1978"
+       width="445.26321"
+       height="264.78494"
+       x="-117.5677"
+       y="32.09515"
        rx="7.7745693e-17" />
     <rect
-       style="fill:url(#linearGradient2604);stroke-width:0.7425;fill-opacity:1"
-       id="rect2566"
-       width="445.20111"
-       height="156.81126"
-       x="-117.5677"
-       y="140.06883"
+       style="fill:url(#linearGradient1562);stroke-width:0.7425;fill-opacity:1"
+       id="rect1528"
+       width="184.87086"
+       height="32.023544"
+       x="-117.5723"
+       y="0.15764116"
        rx="7.7745693e-17" />
   </g>
 </svg>

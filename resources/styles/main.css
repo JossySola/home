@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1rem;
 }
 h1 {
-    margin-top: 2rem;
+    margin-top: 3rem;
     font-family: 'Source Code Pro', monospace;
 }
 h2 {
@@ -41,9 +41,9 @@ header {
 main {
     display: flex;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 1.5rem 0;
     width: 100%;
-    height: fit-content;
+    height: 90vh;
 }
 
 
@@ -62,10 +62,40 @@ main {
 .accessibility {
     background-color: #3f3f3f;
 }
+
 .desktop {
     background-color: #F3F3F3;
     border: 1px solid #F3F3F3;
     border-radius: 3rem;
-    width: 90%;
-    height: 50rem;
+    width: 95%;
+    height: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.folder {
+    width: 20rem;
+    height: 21rem;
+    color: black;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+    display: grid;
+    grid-template:
+    "img"
+    "txt" 1fr;
+}
+.folder img {
+    width: 100%;
+    grid-area: img;
+}
+.folder span {
+    width: 100%;
+    text-align: center;
+    grid-area: txt;
 }

@@ -38,3 +38,19 @@
     font-family: 'Source Code Pro XBI';
     src: url(../fonts/Source_Code_Pro/static/SourceCodePro-ExtraBoldItalic.ttf);
 }
+@font-face {
+    font-family: 'CourierPrime Bold';
+    src: url(../fonts/Courier_Prime/CourierPrime-Bold.ttf);
+}
+@font-face {
+    font-family: 'CourierPrime Bold Italic';
+    src: url(../fonts/Courier_Prime/CourierPrime-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'CourierPrime Italic';
+    src: url(../fonts/Courier_Prime//CourierPrime-Italic.ttf);
+}
+@font-face {
+    font-family: 'CourierPrime';
+    src: url(../fonts/Courier_Prime/CourierPrime-Regular.ttf);
+}
