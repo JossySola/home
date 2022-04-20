@@ -38,6 +38,13 @@ h2 span {
 header {
     text-align: center;
 }
+main {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    width: 100%;
+    height: fit-content;
+}
 
 
 
@@ -54,4 +61,11 @@ header {
 }
 .accessibility {
     background-color: #3f3f3f;
+}
+.desktop {
+    background-color: #F3F3F3;
+    border: 1px solid #F3F3F3;
+    border-radius: 3rem;
+    width: 90%;
+    height: 50rem;
 }
