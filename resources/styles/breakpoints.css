@@ -1,0 +1,9 @@
+@media screen and (max-width: 540px) and (orientation: portrait) {
+    .file {
+        min-width: 30rem;
+    }
+    #desktop {
+        flex-flow: column wrap;
+    }
+}
+
