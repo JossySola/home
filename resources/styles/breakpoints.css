@@ -1,9 +1,10 @@
-@media screen and (max-width: 540px) and (orientation: portrait) {
-    .file {
-        min-width: 30rem;
-    }
+@media only screen and (max-device-width: 57rem) and (orientation: portrait) {
     #desktop {
-        flex-flow: column wrap;
+        flex-flow: column wrap !important;
+    }
+    .file {
+        min-width: 30% !important;
+        max-width: 45% !important;
     }
 }
 
