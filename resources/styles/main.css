@@ -63,38 +63,40 @@ main {
     background-color: #3f3f3f;
 }
 
-.desktop {
+#desktop {
     background-color: #F3F3F3;
     border: 1px solid #F3F3F3;
     border-radius: 3rem;
     width: 95%;
     height: 100%;
+    font-size: 1.5rem;
     display: inline-flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    justify-items: center;
-    align-content: space-around;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.folder {
-    width: 20rem;
-    height: 21rem;
+.file {
+    min-width: 12rem;
+    max-width: 20%;
+    margin: 1.5rem;
     color: black;
-    font-size: xx-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow: hidden;
     cursor: pointer;
     display: grid;
     grid-template:
-    "img"
-    "txt" 1fr;
+    "img" 1fr
+    "txt" 0.4fr;
 }
-.folder img {
+.file img {
     width: 100%;
     grid-area: img;
 }
-.folder span {
+.file .selected {
+    visibility: hidden;
+}
+.file span {
     width: 100%;
     text-align: center;
     grid-area: txt;

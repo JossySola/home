@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="./resources/styles/fonts.css">
         <link rel="stylesheet" type="text/css" href="./resources/styles/main.css">
         <link rel="stylesheet" type="text/css" href="./resources/styles/keyframes.css">
+        <script type="module" src="./main.js" async></script>
     </head>
 
     <body>
@@ -22,19 +23,22 @@
         </header>
 
         <main>
-            <div class="desktop">
-                <div class="folder">
+            <div id="desktop">
+                <div class="file" id="01">
                     <img src="./resources/images/folder_notselected.svg" alt="">
+                    <img class="selected" src="./resources/images/folder_selected.svg" alt="">
                     <span>Administración</span>
                 </div>
 
-                <div class="folder">
+                <div class="file" id="02">
                     <img src="./resources/images/folder_notselected.svg" alt="">
+                    <img class="selected" src="./resources/images/folder_selected.svg" alt="">
                     <span>Desarrollo<br>Full-Stack</span>
                 </div>
 
-                <div class="folder">
+                <div class="file" id="03">
                     <img src="./resources/images/folder_notselected.svg" alt="">
+                    <img class="selected" src="./resources/images/folder_selected.svg" alt="">
                     <span>Arte</span>
                 </div>
             </div>
