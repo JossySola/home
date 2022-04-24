@@ -14,8 +14,20 @@ body {
 a {
     cursor: pointer;
 }
+a:link {
+    text-decoration: none;
+    color: white;
+}
 a:hover {
     text-decoration: underline;
+}
+a:active {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-top: 1rem;
@@ -77,10 +89,11 @@ main {
     overflow: hidden;
 }
 
-.file {
+.folder {
     min-width: 12rem;
     max-width: 20%;
     margin: 1.5rem;
+    font-size: 2.5vw;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor: pointer;
@@ -89,15 +102,70 @@ main {
     "img" 1fr
     "txt" 0.4fr;
 }
-.file img {
+.folder img {
     width: 100%;
     grid-area: img;
 }
-.file .selected {
-    visibility: hidden;
-}
-.file span {
+
+.folder span {
     width: 100%;
     text-align: center;
     grid-area: txt;
+}
+
+.window {
+    position: absolute;
+    display: grid;
+    grid-template: 
+    "windowBar" 0.08fr
+    "windowTitle" 0.08fr
+    "windowContent" 1fr;
+    justify-self: center;
+    width: 60vw;
+    height: 85%;
+    border-radius: 1rem;
+    background-color: #04294B;
+}
+.loading {
+    background-color: #242424;
+    animation: loading 0.7s ease infinite alternate-reverse;
+}
+.file {
+    width: 10rem;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    align-self: baseline;
+    display: grid;
+    grid-template:
+    "img" 7rem
+    "txt" 0.5fr;
+}
+.file img {
+    width: 100%;
+    height: 100%;
+    grid-area: img;
+}
+
+.file span {
+    width: 100%;
+    grid-area: txt;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.selected {
+    visibility: hidden;
+}
+.contentBox::-webkit-scrollbar {
+    background-color: transparent;
+    width: 1vw;
+    height: 1vh;
+}
+.contentBox::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.contentBox::-webkit-scrollbar-thumb {
+    background-color: #ffffffab;
+    border-radius: 3px;
 }
