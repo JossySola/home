@@ -85,6 +85,7 @@ main {
     display: inline-flex;
     flex-flow: row wrap;
     align-items: center;
+    align-content: center;
     justify-content: center;
     overflow: hidden;
 }
@@ -97,6 +98,7 @@ main {
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor: pointer;
+    align-self: flex-start;
     display: grid;
     grid-template:
     "img" 1fr
@@ -153,6 +155,7 @@ main {
     grid-area: txt;
     font-family: 'Courier New', Courier, monospace;
     color: white;
+    margin-top: 0.3rem;
 }
 .selected {
     visibility: hidden;
