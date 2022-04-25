@@ -2,10 +2,29 @@
     #desktop {
         flex-flow: column wrap !important;
     }
-    .file {
+    .folder {
         min-width: 30% !important;
         max-width: 45% !important;
-        font-size: 2.5vh;
+        font-size: 2.5vh !important;
     }
 }
 
+@media only screen and (max-width: 47rem) {
+    #desktop {
+        flex-flow: column wrap !important;
+    }
+    .folder {
+        min-width: 12rem !important;
+        max-width: 40% !important;
+        font-size: 2.5vh !important;
+    }
+    .window {
+        width: 80vw !important;
+    }
+}
+
+@media only screen and (max-width: 31.25rem) {
+    .window {
+        width: 85vw !important;
+    }
+}

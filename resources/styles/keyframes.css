@@ -6,3 +6,12 @@
         color: #264B6C;
     }
 }
+
+@keyframes loading {
+    from {
+        background-color:#242424;
+    }
+    to {
+        background-color:#535353;
+    }
+}

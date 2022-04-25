@@ -104,6 +104,7 @@ main {
     "img" 1fr
     "txt" 0.4fr;
 }
+
 .folder img {
     width: 100%;
     grid-area: img;
