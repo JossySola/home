@@ -644,7 +644,7 @@ class File {
         const tg = this._target;
         const tn = this._name;
         if (device.mobile === true || device.touch > 0) {
-            file.onclick = function() { listDesks[0].openWindow(tg); };
+            file.ontouchstart = function() { listDesks[0].openWindow(tg); };
         } else {
             file.addEventListener('mousedown', function() {getClick.push(tn)});
             file.ondblclick = function() { listDesks[0].openWindow(tg); };

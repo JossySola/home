@@ -45,9 +45,9 @@ if (device.mobile === true || device.touch > 0) {
     const thirdFolder = document.getElementById('03');
 
     // OPEN WINDOW IF USER DOUBLE CLICKS
-    firstFolder.onclick = function() {desk.openWindow('adm')};
-    secondFolder.onclick = function() {desk.openWindow('fullstack')};
-    thirdFolder.onclick = function() {desk.openWindow('art')};
+    firstFolder.ontouchstart = function() {desk.openWindow('adm')};
+    secondFolder.ontouchstart = function() {desk.openWindow('fullstack')};
+    thirdFolder.ontouchstart = function() {desk.openWindow('art')};
 
 
 } else {
