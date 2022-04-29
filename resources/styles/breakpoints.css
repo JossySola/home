@@ -7,6 +7,9 @@
         max-width: 45% !important;
         font-size: 2.5vh !important;
     }
+    .selected:active {
+        visibility: visible !important;
+    }
     .window {
         width: 95% !important;
         height: 90% !important;
