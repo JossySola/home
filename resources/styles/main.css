@@ -1,4 +1,37 @@
+/*
+                            OWNERSHIP AND LICENSE
+    
+    > Ownership
 
+    I ("me", "JOSE MARIA SOLA ESTRADA", "JOSÉ MARÍA SOLÁ ESTRADA", "Jossy Solá",
+    "jossysola") solemnly state and affirm with honesty that after the MIT License
+    all the Content ("Code", "Script") has been written, designed, debugged, 
+    commented, modified and developed by me from the start, without including or 
+    integrating any type of content made by another individual in any part of the 
+    composing process, making me the AUTHOR of this file and its full Content.
+
+    > MIT License
+
+    Copyright (c) 2022 JOSE MARIA SOLA ESTRADA
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+*/
 * {
     padding: 0;
     margin: 0;
@@ -58,8 +91,7 @@ main {
     height: 90vh;
 }
 
-
-
+/* WEBSITE GENERAL LAYOUT */
 .options {
     font-size: 1rem;
     font-family: Calibri;
@@ -89,7 +121,33 @@ main {
     justify-content: center;
     overflow: hidden;
 }
-
+.crystal {
+    position: absolute;
+    width: 95%;
+    height: 85%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.window {
+    position: absolute;
+    display: grid;
+    grid-template: 
+    "windowBar" 0.08fr
+    "windowTitle" 0.08fr
+    "windowContent" 1fr;
+    justify-self: center;
+    width: 60vw;
+    height: 85%;
+    border-radius: 1rem;
+    background-color: #04294B;
+    transition: background-color 0.5s ease-in;
+}
+.loading {
+    background-color: #242424;
+    animation: loading 0.7s ease infinite alternate-reverse;
+}
 .folder {
     min-width: 12rem;
     max-width: 20%;
@@ -104,34 +162,14 @@ main {
     "img" 1fr
     "txt" 0.4fr;
 }
-
 .folder img {
     width: 100%;
     grid-area: img;
 }
-
 .folder span {
     width: 100%;
     text-align: center;
     grid-area: txt;
-}
-
-.window {
-    position: absolute;
-    display: grid;
-    grid-template: 
-    "windowBar" 0.08fr
-    "windowTitle" 0.08fr
-    "windowContent" 1fr;
-    justify-self: center;
-    width: 60vw;
-    height: 85%;
-    border-radius: 1rem;
-    background-color: #04294B;
-}
-.loading {
-    background-color: #242424;
-    animation: loading 0.7s ease infinite alternate-reverse;
 }
 .file {
     width: 10rem;
@@ -150,7 +188,6 @@ main {
     height: 100%;
     grid-area: img;
 }
-
 .file span {
     width: 100%;
     grid-area: txt;
@@ -160,6 +197,54 @@ main {
 }
 .selected {
     visibility: hidden;
+}
+
+/* WINDOW GRID */
+.backtab {
+    cursor: pointer;
+    grid-area: windowBar;
+    text-decoration: none !important;
+    align-self: center;
+    justify-self: left;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    visibility: hidden;
+}
+.closetab {
+    cursor: pointer;
+    grid-area: windowBar;
+    text-decoration: none !important;
+    align-self: center;
+    justify-self: right;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+.windowTitle {
+    grid-area: windowTitle;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    display: inline;
+    transition: display 0.8s ease-in;
+}
+
+.fileTitle {
+    grid-area: windowTitle;
+    color: black;
+    opacity: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+.contentBox {
+    grid-area: windowContent;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: center;
 }
 .contentBox::-webkit-scrollbar {
     background-color: transparent;
@@ -172,4 +257,184 @@ main {
 .contentBox::-webkit-scrollbar-thumb {
     background-color: #ffffffab;
     border-radius: 3px;
+}
+.galleryBox {
+    grid-area: windowContent;
+    width: 100%;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template: "galleryLeft galleryImg galleryRight";
+    grid-template-rows: 100%;
+    grid-template-columns: 35% 30% 35%;
+}
+.galleryImg {
+    justify-self: center;
+    align-self: center;
+    grid-area: galleryLeft / galleryImg / galleryRight;
+    height: 61vh;
+    max-height: 50rem;
+    
+}
+.galleryDirections {
+    font-size: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.galleryDirections:hover {
+    background-color: #ffffff1e;
+    transition: background-color 0.3s ease-in;
+}
+.galleryDirections:active {
+    background-color: #ffffff1e;
+}
+.textBox {
+    grid-area: windowContent;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    text-align: left;
+    color: black !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.1rem;
+}
+.textBox a {
+    font-size: 1.2rem;
+    color: #037fd8 !important;
+}
+.textBox a:link {
+    text-decoration: none;
+    color: #037fd8 !important;
+}
+.textBox a:hover {
+    text-decoration: underline;
+}
+.textBox a:active {
+    text-decoration: none;
+    color: #037fd8 !important;
+}
+.textBox a:visited {
+    color: #037fd8 !important;
+    text-decoration: none;
+}
+.textBox::-webkit-scrollbar {
+    background-color: transparent;
+    width: 1vw;
+    height: 1vh;
+}
+.textBox::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.textBox::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+.transBox {
+    grid-area: windowContent;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.1rem;
+}
+.transBox img {
+    max-width: 320px;
+}
+.transBox li {
+    color:yellow;
+}
+.transBox::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.5vw;
+    height: 1vh;
+}
+.transBox::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.transBox::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+.webBox {
+    grid-area: windowBar / windowTitle / windowContent;
+    background-image: radial-gradient(circle,black,transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.choiceBox {
+    min-width: 10rem;
+    max-width: 20rem;
+    text-align: center;
+    padding: 1rem;
+    color:#434343;
+    background-color: white;
+    display: grid;
+    grid-template:
+    "a a a" 2fr
+    "b . c" 1fr;
+}
+.choiceBox a:hover {
+    text-decoration: none !important;
+}
+.msgBox {
+    grid-area: a;
+}
+.acceptBtn {
+    color: white;
+    background-color: #3ead22;
+    grid-area: c;
+    padding: 0.5rem 0.5rem;
+}
+.cancelBtn {
+    color: white;
+    background-color: #242424;
+    grid-area: b;
+    padding: 0.5rem 0.5rem;
+}
+.rolegrid {
+    display: grid;
+    grid-template: 
+    "role role"
+    "period period"
+    "skills skills"
+    "logo logo";
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0 10rem;
+}
+
+
+/* TRANSITIONS */
+.textTransition {
+    background-color: #e3e2db;
+    border: 1px solid #b3b1a9;
+    color: #ffffffc4;
+    transition: background-color 0.3s ease-in-out;
+}
+.presentationTransition {
+    background-color: #a02c2c;
+    transition: background-color 0.3s ease-in-out;
+}
+.galleryTransition {
+    background-color: #141414;
+    transition: background-color 0.7s ease-in-out;
+}
+.colorTransition {
+    color: black !important;
+    transition: color 0.8s ease-in-out !important;
+}
+.appearTransition {
+    opacity: 1 !important;
+    transition: opacity 1s ease-in;
 }

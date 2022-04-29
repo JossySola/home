@@ -7,6 +7,29 @@
         max-width: 45% !important;
         font-size: 2.5vh !important;
     }
+    .window {
+        width: 95% !important;
+        height: 90% !important;
+    }
+    .galleryDirections {
+        font-size: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        background-color: #ffffff1e;
+        opacity: 0;
+    }
+    .galleryDirections:hover {
+        opacity: 1;
+        transition: opacity 0.3s ease-in !important;
+    }
+    .galleryDirections:active {
+        opacity: 1;
+        transition: opacity 0.3s ease-in !important;
+    }
 }
 
 @media only screen and (max-width: 47rem) {
@@ -21,10 +44,85 @@
     .window {
         width: 80vw !important;
     }
+    .galleryDirections {
+        font-size: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        background-color: #ffffff1e;
+        opacity: 0;
+    }
+    .galleryDirections:hover {
+        opacity: 1;
+        transition: opacity 0.3s ease-in !important;
+    }
+    .galleryDirections:active {
+        opacity: 1;
+        transition: opacity 0.3s ease-in !important;
+    }
 }
 
 @media only screen and (max-width: 31.25rem) {
     .window {
         width: 85vw !important;
+    }
+    .galleryDirections {
+        font-size: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        background-color: #ffffff1e;
+        opacity: 0;
+    }
+    .galleryDirections:hover {
+        opacity: 1;
+        transition: opacity 0.3s ease-in !important;
+    }
+    .galleryDirections:active {
+        opacity: 1;
+        transition: opacity 0.3s ease-in !important;
+    }
+}
+
+@media only screen and (max-width: 20.31rem) {
+    .window {
+        overflow: scroll;
+    }
+    .window::-webkit-scrollbar {
+        background-color: transparent;
+        width: 1vw;
+        height: 1vh;
+    }
+    .window::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+    .window::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 3px;
+    }
+    .galleryDirections {
+        font-size: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        background-color: #ffffff1e;
+        opacity: 0;
+    }
+    .galleryDirections:hover {
+        opacity: 1;
+        transition: opacity 0.3s ease-in !important;
+    }
+    .galleryDirections:active {
+        opacity: 1;
+        transition: opacity 0.3s ease-in !important;
     }
 }
