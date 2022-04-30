@@ -1,4 +1,10 @@
 @media only screen and (max-device-width: 57rem) and (orientation: portrait) {
+    .language {
+        font-size: 1rem !important;
+    }
+    .accessibility {
+        font-size: 1rem !important;
+    }
     #desktop {
         flex-flow: column wrap !important;
     }
@@ -6,6 +12,23 @@
         min-width: 30% !important;
         max-width: 45% !important;
         font-size: 2.5vh !important;
+    }
+    .file {
+        min-width: 30% !important;
+        max-width: 45% !important;
+        font-size: 2.5vh !important;
+    }
+    .backtab {
+        font-size: 1rem !important;
+    }
+    .closetab {
+        font-size: 1rem !important;
+    }
+    .windowTitle {
+        font-size: 1rem !important;
+    }
+    .fileTitle {
+        font-size: 1rem !important;
     }
     .selected:active {
         visibility: visible !important;
@@ -40,6 +63,11 @@
         flex-flow: column wrap !important;
     }
     .folder {
+        min-width: 12rem !important;
+        max-width: 40% !important;
+        font-size: 2.5vh !important;
+    }
+    .file {
         min-width: 12rem !important;
         max-width: 40% !important;
         font-size: 2.5vh !important;

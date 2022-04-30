@@ -295,6 +295,9 @@ main {
 .galleryDirections:active {
     background-color: #ffffff1e;
 }
+.galleryDirections:visited {
+    opacity: 0;
+}
 .textBox {
     grid-area: windowContent;
     width: 100%;
