@@ -286,6 +286,19 @@ class Desktop {
                                 galleryImg.setAttribute('src', gallerySRC);
                             }
                         });
+                        galleryBack.ontouchstart = function(){
+                            if (imageIndex === 0) {
+                                gallerySRC = './resources/images/' + image[galleryLength];
+                                galleryImg.setAttribute('alt',image[galleryLength])
+                                galleryImg.setAttribute('src', gallerySRC);
+                                imageIndex = galleryLength;
+                            } else {
+                                imageIndex --;
+                                gallerySRC = './resources/images/' + image[imageIndex];
+                                galleryImg.setAttribute('alt',image[imageIndex])
+                                galleryImg.setAttribute('src', gallerySRC);
+                            }
+                        };
 
                         const galleryNext = document.createElement('div');
                         galleryNext.innerHTML = '>';
@@ -303,6 +316,17 @@ class Desktop {
                                 galleryImg.setAttribute('src', gallerySRC);
                             }
                         });
+                        galleryNext.ontouchstart = function(){
+                            if (imageIndex === galleryLength) {
+                                gallerySRC = './resources/images/' + image[0];
+                                galleryImg.setAttribute('src', gallerySRC);
+                                imageIndex = 0;
+                            } else {
+                                imageIndex ++;
+                                gallerySRC = './resources/images/' + image[imageIndex];
+                                galleryImg.setAttribute('src', gallerySRC);
+                            }
+                        };
 
                         win.appendChild(galleryContent);
                     break;
