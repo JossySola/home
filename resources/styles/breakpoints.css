@@ -2,6 +2,12 @@
     html {
         font-size: 2vh !important;
     }
+    a {
+        font-size: 2.5vh !important;
+    }
+    #jossy_banner {
+        font-size: 2.3vh !important;
+    }
     #desktop {
         flex-flow: column wrap !important;
     }
@@ -48,6 +54,12 @@
     html {
         font-size: 2vh !important;
     }
+    a {
+        font-size: 2.5vh !important;
+    }
+    #jossy_banner {
+        font-size: 2.3vh !important;
+    }
     #desktop {
         flex-flow: column wrap !important;
     }
@@ -89,6 +101,12 @@
     html {
         font-size: 2vh !important;
     }
+    a {
+        font-size: 2.5vh !important;
+    }
+    #jossy_banner {
+        font-size: 2.3vh !important;
+    }
     .window {
         width: 85vw !important;
     }
@@ -116,6 +134,12 @@
 @media only screen and (max-width: 20.31rem) {
     html {
         font-size: 2vh !important;
+    }
+    a {
+        font-size: 2.5vh !important;
+    }
+    #jossy_banner {
+        font-size: 2.3vh !important;
     }
     .window {
         overflow: scroll;
