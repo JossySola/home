@@ -1,6 +1,6 @@
 @media only screen and (max-device-width: 57rem) and (orientation: portrait) {
     html {
-        font-size: 1vh !important;
+        font-size: 2vh !important;
     }
     #desktop {
         flex-flow: column wrap !important;
@@ -46,7 +46,7 @@
 
 @media only screen and (max-width: 47rem) {
     html {
-        font-size: 1vh !important;
+        font-size: 2vh !important;
     }
     #desktop {
         flex-flow: column wrap !important;
@@ -87,7 +87,7 @@
 
 @media only screen and (max-width: 31.25rem) {
     html {
-        font-size: 1vh !important;
+        font-size: 2vh !important;
     }
     .window {
         width: 85vw !important;
@@ -115,7 +115,7 @@
 
 @media only screen and (max-width: 20.31rem) {
     html {
-        font-size: 1vh !important;
+        font-size: 2vh !important;
     }
     .window {
         overflow: scroll;
