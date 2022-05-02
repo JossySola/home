@@ -148,7 +148,7 @@ const jobPeriod = {
         const logoContent = document.createElement('img');
         logoContent.setAttribute('style','grid-area: logo; justify-self: center');
         logoContent.setAttribute('alt', this.company + ' logo');
-        const logoSRC = './resources/images/' + this.company + '.png';
+        const logoSRC = './resources/images/' + this.company;
         logoContent.setAttribute('src', logoSRC);
         roleGrid.appendChild(logoContent);
 
