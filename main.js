@@ -44,9 +44,9 @@ if ( window.navigator.maxTouchPoints > 0 ) {
     const secondFolder = document.getElementById('fullstack');
     const thirdFolder = document.getElementById('art');
 
-    firstFolder.addEventListener('click', function() { desk.openWindow('adm') });
-    secondFolder.addEventListener('click', function() { desk.openWindow('fullstack') });
-    thirdFolder.addEventListener('click', function() { desk.openWindow('art') });
+    firstFolder.addEventListener('touchstart', function() { desk.openWindow('adm') });
+    secondFolder.addEventListener('touchstart', function() { desk.openWindow('fullstack') });
+    thirdFolder.addEventListener('touchstart', function() { desk.openWindow('art') });
 
     // OPEN WINDOW IF USER TOUCHES AN ELEMENT
     /*firstFolder.onclick = function() {desk.openWindow('adm')};
