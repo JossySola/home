@@ -40,20 +40,20 @@ if (device.mobile === true || device.touch > 0) {
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
 
-    const firstFolder = document.getElementById('01');
-    const secondFolder = document.getElementById('02');
-    const thirdFolder = document.getElementById('03');
+    const firstFolder = document.getElementById('adm');
+    const secondFolder = document.getElementById('fullstack');
+    const thirdFolder = document.getElementById('art');
 
     function touchStart(event) {
-        event.preventDefault();
+       
         const targ = event.path[1].getAttribute('id');
 
         desk.openWindow(targ);
     };
 
-    firstFolder.addEventListener('touchstart', touchStart, false);
-    secondFolder.addEventListener('touchstart', touchStart, false);
-    thirdFolder.addEventListener('touchstart', touchStart, false);
+    firstFolder.addEventListener('click', touchStart);
+    secondFolder.addEventListener('click', touchStart);
+    thirdFolder.addEventListener('click', touchStart);
 
     // OPEN WINDOW IF USER TOUCHES AN ELEMENT
     /*firstFolder.onclick = function() {desk.openWindow('adm')};
