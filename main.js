@@ -44,15 +44,15 @@ if (device.mobile === true || device.touch > 0) {
     const secondFolder = document.getElementById('02');
     const thirdFolder = document.getElementById('03');
 
-    function touchEnd(event) {
+    function touchstart(event) {
         const targ = event.path[1].getAttribute('id');
 
         desk.openWindow(targ);
     };
 
-    firstFolder.addEventListener('touchend', touchEnd, false);
-    secondFolder.addEventListener('touchend', touchEnd, false);
-    thirdFolder.addEventListener('touchend', touchEnd, false);
+    firstFolder.addEventListener('touchstart', touchstart, false);
+    secondFolder.addEventListener('touchstart', touchstart, false);
+    thirdFolder.addEventListener('touchstart', touchstart, false);
 
     // OPEN WINDOW IF USER TOUCHES AN ELEMENT
     /*firstFolder.onclick = function() {desk.openWindow('adm')};
@@ -69,11 +69,11 @@ if (device.mobile === true || device.touch > 0) {
     const thirdFolder = document.getElementById('art');
 
     // SET SELECTION FEATURE IN THE DESKTOP ENVIRONMENT
-    desk.name.onmousedown = function () {getClick.push('desktop')};
-    firstFolder.onmousedown = function () {getClick.push('adm')};
-    secondFolder.onmousedown = function () {getClick.push('fullstack')};
-    thirdFolder.onmousedown = function () {getClick.push('art')};
-    desk.name.onmouseup = function () {getSelection()};
+    desk.name.onmousedown = function() { getClick.push('desktop') };
+    firstFolder.onmousedown = function(event) {const targ = event.path[1].getAttribute('id'); getClick.push(targ)};
+    secondFolder.onmousedown = function(event) {const targ = event.path[1].getAttribute('id'); getClick.push(targ)};
+    thirdFolder.onmousedown = function(event) {const targ = event.path[1].getAttribute('id'); getClick.push(targ)};
+    desk.name.onmouseup = function () { getSelection() };
 
     // OPEN WINDOW IF USER DOUBLE CLICKS
     firstFolder.ondblclick = function(event) {const targ = event.path[1].getAttribute('id'); desk.openWindow(targ)};
