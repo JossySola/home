@@ -44,29 +44,39 @@ if (device.mobile === true || device.touch > 0) {
     const secondFolder = document.getElementById('02');
     const thirdFolder = document.getElementById('03');
 
+    function touchEnd(event) {
+        const targ = event.path[1].getAttribute('id');
+
+        desk.openWindow(targ);
+    };
+
+    firstFolder.addEventListener('touchend', touchEnd, false);
+    secondFolder.addEventListener('touchend', touchEnd, false);
+    thirdFolder.addEventListener('touchend', touchEnd, false);
+
     // OPEN WINDOW IF USER TOUCHES AN ELEMENT
-    firstFolder.onclick = function() {desk.openWindow('adm')};
+    /*firstFolder.onclick = function() {desk.openWindow('adm')};
     secondFolder.onclick = function() {desk.openWindow('fullstack')};
-    thirdFolder.onclick = function() {desk.openWindow('art')};
+    thirdFolder.onclick = function() {desk.openWindow('art')};*/
 
 } else {
         // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
 
-    const firstFolder = document.getElementById('01');
-    const secondFolder = document.getElementById('02');
-    const thirdFolder = document.getElementById('03');
+    const firstFolder = document.getElementById('adm');
+    const secondFolder = document.getElementById('fullstack');
+    const thirdFolder = document.getElementById('art');
 
     // SET SELECTION FEATURE IN THE DESKTOP ENVIRONMENT
     desk.name.onmousedown = function () {getClick.push('desktop')};
-    firstFolder.onmousedown = function () {getClick.push('01')};
-    secondFolder.onmousedown = function () {getClick.push('02')};
-    thirdFolder.onmousedown = function () {getClick.push('03')};
+    firstFolder.onmousedown = function () {getClick.push('adm')};
+    secondFolder.onmousedown = function () {getClick.push('fullstack')};
+    thirdFolder.onmousedown = function () {getClick.push('art')};
     desk.name.onmouseup = function () {getSelection()};
 
     // OPEN WINDOW IF USER DOUBLE CLICKS
-    firstFolder.ondblclick = function() {desk.openWindow('adm')};
-    secondFolder.ondblclick = function() {desk.openWindow('fullstack')};
-    thirdFolder.ondblclick = function() {desk.openWindow('art')};
+    firstFolder.ondblclick = function(event) {const targ = event.path[1].getAttribute('id'); desk.openWindow(targ)};
+    secondFolder.ondblclick = function(event) {const targ = event.path[1].getAttribute('id'); desk.openWindow(targ)};
+    thirdFolder.ondblclick = function(event) {const targ = event.path[1].getAttribute('id'); desk.openWindow(targ)};
 };
