@@ -35,7 +35,7 @@
 import { Desktop, lan, device, getClick, mainDesktop, getSelection } from "./resources/modules/classes.js";
 const {width, orientation, touch, mobile} = device;
 
-if (device.touch > 0) {
+if ( window.navigator.maxTouchPoints > 0 ) {
     // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
