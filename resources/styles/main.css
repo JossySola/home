@@ -90,6 +90,69 @@ main {
     width: 100%;
     height: 90vh;
 }
+footer {
+    text-align: center;
+    padding: 0.8rem 0;
+    margin-top: 2.5rem;
+    background-color:black;
+}
+#inbox {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+    position: absolute;
+    align-self: flex-start;
+    left: 2.5vw;
+    cursor: pointer;
+}
+
+#inbox img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+#notification {
+    background-color: red;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 0.2rem solid #F3F3F3;
+    position: relative;
+    display: inline-block;
+    left: 70%;
+    bottom: 30%;
+}
+.inboxMsg {
+    background-color: #739140;
+    border: 0.12rem solid darkolivegreen;
+    border-radius: 0.8rem;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    left: 10vw;
+    align-self: flex-start;
+    width: 30vw;
+    text-align: left;
+    overflow: scroll;
+    display: grid;
+    grid-template-areas: "inboxBar"
+                         "inboxMsg"
+                         "inboxMedia";
+}
+.inboxMsg::-webkit-scrollbar {
+    background-color: transparent;
+    width: 1vw;
+    height: 1vh;
+}
+.inboxMsg::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.inboxMsg::-webkit-scrollbar-thumb {
+    background-color: #ffffffab;
+    border-radius: 3px;
+}
 
 /* WEBSITE GENERAL LAYOUT */
 .options {
