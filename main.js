@@ -35,8 +35,7 @@
 import { Desktop, lan, device, getClick, mainDesktop, getSelection } from "./resources/modules/classes.js";
 const {width, orientation, touch, mobile} = device;
 
-if (device.touch > 0) {
-
+if (device.mobile === true || device.touch > 0) {
     // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
@@ -46,28 +45,9 @@ if (device.touch > 0) {
     const thirdFolder = document.getElementById('03');
 
     // OPEN WINDOW IF USER TOUCHES AN ELEMENT
-    firstFolder.addEventListener("touchstart", touchStart, false);
-    firstFolder.addEventListener("touchend", function() {desk.openWindow('adm')}, false);
-
-    secondFolder.addEventListener("touchstart", touchStart, false);
-    secondFolder.addEventListener("touchend", function() {desk.openWindow('fullstack')}, false);
-
-    thirdFolder.addEventListener("touchstart", touchStart, false);
-    thirdFolder.addEventListener("touchend", function() {desk.openWindow('art')}, false);
-
-} else if (device.mobile === true && device.touch > 0) {
-    // SET MAIN DESKTOP ENVIRONMENT
-    const desk = new Desktop('desktop');
-    mainDesktop.push(desk);
-
-    const firstFolder = document.getElementById('01');
-    const secondFolder = document.getElementById('02');
-    const thirdFolder = document.getElementById('03');
-
-    // OPEN WINDOW IF USER TOUCHES AN ELEMENT
-    firstFolder.ontouchstart = function() {desk.openWindow('adm')};
-    secondFolder.ontouchstart = function() {desk.openWindow('fullstack')};
-    thirdFolder.ontouchstart = function() {desk.openWindow('art')};
+    firstFolder.onmouseup = function() {desk.openWindow('adm')};
+    secondFolder.onmouseup = function() {desk.openWindow('fullstack')};
+    thirdFolder.onmouseup = function() {desk.openWindow('art')};
 
 } else {
         // SET MAIN DESKTOP ENVIRONMENT
