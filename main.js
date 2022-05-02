@@ -45,9 +45,9 @@ if (device.mobile === true || device.touch > 0) {
     const thirdFolder = document.getElementById('03');
 
     // OPEN WINDOW IF USER TOUCHES AN ELEMENT
-    firstFolder.onmouseup = function() {desk.openWindow('adm')};
-    secondFolder.onmouseup = function() {desk.openWindow('fullstack')};
-    thirdFolder.onmouseup = function() {desk.openWindow('art')};
+    firstFolder.onclick = function() {desk.openWindow('adm')};
+    secondFolder.onclick = function() {desk.openWindow('fullstack')};
+    thirdFolder.onclick = function() {desk.openWindow('art')};
 
 } else {
         // SET MAIN DESKTOP ENVIRONMENT
