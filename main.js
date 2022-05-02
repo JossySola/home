@@ -32,10 +32,10 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 */
-import { Desktop, lan, device, getClick, mainDesktop, getSelection } from "./resources/modules/classes.js";
+import { Desktop, lan, device, getClick, mainDesktop, getSelection, inboxMsg } from "./resources/modules/classes.js";
 const {width, orientation, touch, mobile} = device;
 
-if ( window.navigator.maxTouchPoints > 0 ) {
+if ( device.touch > 0 ) {
     // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
@@ -61,6 +61,10 @@ if ( window.navigator.maxTouchPoints > 0 ) {
     const firstFolder = document.getElementById('adm');
     const secondFolder = document.getElementById('fullstack');
     const thirdFolder = document.getElementById('art');
+    const inbox = document.getElementById('inbox');
+
+    // SET CLICKABLE INBOX
+    inbox.onclick = inboxMsg;
 
     // SET SELECTION FEATURE IN THE DESKTOP ENVIRONMENT
     desk.name.onmousedown = function() { getClick.push('desktop') };

@@ -483,7 +483,7 @@ class Desktop {
             newWindow.setAttribute('id', windowName.toString());
 
             const closeTab = document.createElement('a'); // ADDS THE CLOSE TAB TO NEW WINDOW
-            closeTab.setAttribute('href', '#desktop');
+            closeTab.setAttribute('href', '#myname');
             closeTab.setAttribute('class', 'closetab');
             closeTab.setAttribute('id', 'closetab');
             closeTab.innerHTML = 'X';
@@ -535,7 +535,7 @@ class Desktop {
             const close = document.getElementById('closetab');
             const winTitle = document.getElementById('title');
             const backTab = document.createElement('a');
-            backTab.setAttribute('href','#desktop');
+            backTab.setAttribute('href','#myname');
             backTab.setAttribute('class','backtab');
             backTab.setAttribute('id','backtab');
             if (lan === 'es') {
@@ -695,4 +695,77 @@ function getSelection() {
     };   
 };
 
-export {Desktop, File, lan, device, getClick, mainDesktop, getSelection };
+function inboxMsg(event) {
+    const pastInbox = document.getElementById('inboxMsg');
+    if (pastInbox) {
+        pastInbox.remove();
+    };
+    const thisDesktop = mainDesktop[0].name;
+
+    const msg = document.createElement('div');
+    msg.setAttribute('id','inboxMsg');
+    msg.setAttribute('class','inboxMsg');
+
+    const closeInbox = document.createElement('a');
+    closeInbox.setAttribute('style','grid-area:inboxBar; align-self: center; justify-self: right; cursor: pointer');
+    closeInbox.setAttribute('href','#myname');
+    closeInbox.innerHTML = 'X';
+    msg.appendChild(closeInbox);
+    const msgTitle = document.createElement('span');
+    msgTitle.setAttribute('style', 'justify-self: left; grid-area:inboxBar; align-self: center; display: inline');
+    msg.appendChild(msgTitle);
+    const msgContent = document.createElement('span');
+    msgContent.setAttribute('style','margin: 1rem 0');
+    msg.appendChild(msgContent);
+    const msgMedia = document.createElement('div');
+    msgMedia.setAttribute('style','display: inline-flex; align-content:center; justify-items: center');
+    msg.appendChild(msgMedia);
+
+    const githubLink = document.createElement('a');
+    githubLink.setAttribute('href','https://github.com/JossySola');
+    githubLink.setAttribute('target','_blank');
+    githubLink.setAttribute('alt','Link to Jossy Sola Github profile');
+    githubLink.setAttribute('style','margin: 0.5rem');
+    const github = document.createElement('img');
+    github.setAttribute('src','./resources/images/github.svg');
+    github.setAttribute('style','width:2rem; height:2rem');
+    githubLink.appendChild(github);
+
+    const linkedinLink = document.createElement('a');
+    linkedinLink.setAttribute('href','https://www.linkedin.com/in/soem940809rs7/');
+    linkedinLink.setAttribute('target','_blank');
+    linkedinLink.setAttribute('alt','Link to Jossy Sola LinkedIn profile');
+    linkedinLink.setAttribute('style','margin: 0.5rem');
+    const linkedin = document.createElement('img');
+    linkedin.setAttribute('src','./resources/images/linkedin.svg');
+    linkedin.setAttribute('style','width:2rem; height:2rem');
+    linkedinLink.appendChild(linkedin);
+
+    const instagramLink = document.createElement('a');
+    instagramLink.setAttribute('href','https://www.instagram.com/jossysolart/');
+    instagramLink.setAttribute('target','_blank');
+    instagramLink.setAttribute('alt','Link to Jossy Sola Instagram profile');
+    instagramLink.setAttribute('style','margin: 0.5rem');
+    const instagram = document.createElement('img');
+    instagram.setAttribute('src','./resources/images/instagram.svg');
+    instagram.setAttribute('style','width:2rem; height:2rem');
+    instagramLink.appendChild(instagram);
+
+    msgMedia.appendChild(githubLink);
+    msgMedia.appendChild(linkedinLink);
+    msgMedia.appendChild(instagramLink);
+
+
+    if (lan === 'es') {
+        msgTitle.innerHTML = "¡Hola!";
+        msgContent.innerHTML = "Gracias por tu interés en mi portafolio.<br><br>Mi nombre es José María y disfruto mucho las actividades que incluyan crear e innovar. También me caracterizo por ser una persona metódica y analítica y tiendo a seguir muy de cerca las pautas y procedimientos, así como enfocarme en los detalles.<br><br>A continuación te dejo mis redes sociales: <img src='./resources/images/heart.svg' alt=''/>"; 
+    } else {
+        msgTitle.innerHTML = "Hey!";
+        msgContent.innerHTML = "Thank you for your interest in my portfolio!<br><br>My name is José María and I enjoy activities related to creating and innovating. I'm also known to be a really methodic and analytical person with a tendency to follow guidelines and procedures tightly as well as focusing on details.<br><br>These are some of my social media: <img src='./resources/images/heart.svg' alt=''/>";
+    };
+
+    thisDesktop.appendChild(msg);
+    closeInbox.onclick = function() { msg.remove() };
+}
+
+export {Desktop, File, lan, device, getClick, mainDesktop, getSelection, inboxMsg };
