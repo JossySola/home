@@ -44,16 +44,9 @@ if (device.mobile === true || device.touch > 0) {
     const secondFolder = document.getElementById('fullstack');
     const thirdFolder = document.getElementById('art');
 
-    function touchStart(event) {
-       
-        const targ = event.path[1].getAttribute('id');
-
-        desk.openWindow(targ);
-    };
-
-    firstFolder.addEventListener('click', touchStart);
-    secondFolder.addEventListener('click', touchStart);
-    thirdFolder.addEventListener('click', touchStart);
+    firstFolder.addEventListener('click', function() {desk.openWindow('adm')});
+    secondFolder.addEventListener('click', function() {desk.openWindow('fullstack')});
+    thirdFolder.addEventListener('click', function() {desk.openWindow('art')});
 
     // OPEN WINDOW IF USER TOUCHES AN ELEMENT
     /*firstFolder.onclick = function() {desk.openWindow('adm')};
