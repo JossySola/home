@@ -44,15 +44,16 @@ if (device.mobile === true || device.touch > 0) {
     const secondFolder = document.getElementById('02');
     const thirdFolder = document.getElementById('03');
 
-    function touchstart(event) {
+    function touchStart(event) {
+        event.preventDefault();
         const targ = event.path[1].getAttribute('id');
 
         desk.openWindow(targ);
     };
 
-    firstFolder.addEventListener('touchstart', touchstart, false);
-    secondFolder.addEventListener('touchstart', touchstart, false);
-    thirdFolder.addEventListener('touchstart', touchstart, false);
+    firstFolder.addEventListener('touchstart', touchStart, false);
+    secondFolder.addEventListener('touchstart', touchStart, false);
+    thirdFolder.addEventListener('touchstart', touchStart, false);
 
     // OPEN WINDOW IF USER TOUCHES AN ELEMENT
     /*firstFolder.onclick = function() {desk.openWindow('adm')};
