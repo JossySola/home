@@ -1,9 +1,6 @@
 @media only screen and (max-device-width: 57rem) and (orientation: portrait) {
-    .language {
-        font-size: 1rem !important;
-    }
-    .accessibility {
-        font-size: 1rem !important;
+    html {
+        font-size: 1vh !important;
     }
     #desktop {
         flex-flow: column wrap !important;
@@ -18,18 +15,7 @@
         max-width: 45% !important;
         font-size: 2.5vh !important;
     }
-    .backtab {
-        font-size: 1rem !important;
-    }
-    .closetab {
-        font-size: 1rem !important;
-    }
-    .windowTitle {
-        font-size: 1rem !important;
-    }
-    .fileTitle {
-        font-size: 1rem !important;
-    }
+
     .selected:active {
         visibility: visible !important;
     }
@@ -59,6 +45,9 @@
 }
 
 @media only screen and (max-width: 47rem) {
+    html {
+        font-size: 1vh !important;
+    }
     #desktop {
         flex-flow: column wrap !important;
     }
@@ -97,6 +86,9 @@
 }
 
 @media only screen and (max-width: 31.25rem) {
+    html {
+        font-size: 1vh !important;
+    }
     .window {
         width: 85vw !important;
     }
@@ -122,6 +114,9 @@
 }
 
 @media only screen and (max-width: 20.31rem) {
+    html {
+        font-size: 1vh !important;
+    }
     .window {
         overflow: scroll;
     }
