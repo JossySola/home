@@ -355,7 +355,7 @@ class Desktop {
                         transContent.setAttribute('id',tabName);
 
                         
-                        jobPeriod.company = 'ishop';
+                        jobPeriod.company = 'ishop.png';
                         if (lan === 'es') {
                             jobPeriod.period = '<em>SEP 2020 - ENE 2022</em>';
                             jobPeriod.skills = ['Administración','Liderazgo','Trabajo en equipo','Solución de problemas','Atento al detalle'];
@@ -369,7 +369,7 @@ class Desktop {
                         transContent.appendChild(fourthPeriod);
 
                         
-                        jobPeriod.company = 'ishop';
+                        jobPeriod.company = 'ishop.png';
                         if (lan === 'es') {
                             jobPeriod.period = '<em>MAR 2019 - AGO 2020</em>';
                             jobPeriod.skills = ['Entrenamiento','Administración','Innovación','Priorización','Comunicación'];
@@ -383,7 +383,7 @@ class Desktop {
                         transContent.appendChild(thirdPeriod);
 
                         
-                        jobPeriod.company = 'ishop';
+                        jobPeriod.company = 'ishop.png';
                         if (lan === 'es') {
                             jobPeriod.period = '<em>MAR 2018 - FEB 2019</em>';
                             jobPeriod.skills = ['Atención a Cliente','Dedicación','Manejo de dinero / Cobro'];
@@ -397,7 +397,7 @@ class Desktop {
                         transContent.appendChild(secondPeriod);
 
                         
-                        jobPeriod.company = 'gandhi';
+                        jobPeriod.company = 'gandhi.webp';
                         if (lan === 'es') {
                             jobPeriod.period = '<em>JUL 2015 - FEB 2018</em>';
                             jobPeriod.skills = ['Atención a Cliente','Manejo de dinero / Cobro','Orientado a Resultados'];
