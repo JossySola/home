@@ -44,7 +44,7 @@ if (device.mobile === true || device.touch > 0) {
     const secondFolder = document.getElementById('fullstack');
     const thirdFolder = document.getElementById('art');
 
-    firstFolder.addEventListener('click', function() {desk.openWindow('adm')});
+    firstFolder.addEventListener('click', function() { alert('CLICK received') });
     secondFolder.addEventListener('click', function() {desk.openWindow('fullstack')});
     thirdFolder.addEventListener('click', function() {desk.openWindow('art')});
 
