@@ -43,6 +43,10 @@ if ( device.touch > 0 ) {
     const firstFolder = document.getElementById('adm');
     const secondFolder = document.getElementById('fullstack');
     const thirdFolder = document.getElementById('art');
+    const inbox = document.getElementById('inbox');
+
+    // SET CLICKABLE INBOX
+    inbox.onclick = inboxMsg;
 
     firstFolder.addEventListener('touchstart', function() { desk.openWindow('adm') });
     secondFolder.addEventListener('touchstart', function() { desk.openWindow('fullstack') });
