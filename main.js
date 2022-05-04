@@ -48,8 +48,6 @@ if ( device.touch > 0 ) {
     const thirdFolder = document.getElementById('art');
     const inbox = document.getElementById('inbox');
 
-    alert('This must work on iOS as there is not import keyword');
-
     // SET CLICKABLE INBOX
     inbox.onclick = inboxMsg;
 
