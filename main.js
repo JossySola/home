@@ -39,6 +39,7 @@ import { Desktop, lan, device, getClick, mainDesktop, getSelection, inboxMsg } f
 const {width, orientation, touch, mobile} = device;
 
 if ( device.touch > 0 ) {
+    alert('Test for iOS')
     // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
