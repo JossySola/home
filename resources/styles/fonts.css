@@ -39,18 +39,18 @@
     src: url(../fonts/Source_Code_Pro/static/SourceCodePro-ExtraBoldItalic.ttf);
 }
 @font-face {
-    font-family: 'CourierPrime Bold';
+    font-family: 'Courier Prime Bold';
     src: url(../fonts/Courier_Prime/CourierPrime-Bold.ttf);
 }
 @font-face {
-    font-family: 'CourierPrime Bold Italic';
+    font-family: 'Courier Prime Bold Italic';
     src: url(../fonts/Courier_Prime/CourierPrime-BoldItalic.ttf);
 }
 @font-face {
-    font-family: 'CourierPrime Italic';
+    font-family: 'Courier Prime Italic';
     src: url(../fonts/Courier_Prime//CourierPrime-Italic.ttf);
 }
 @font-face {
-    font-family: 'CourierPrime';
+    font-family: 'Courier Prime';
     src: url(../fonts/Courier_Prime/CourierPrime-Regular.ttf);
 }
