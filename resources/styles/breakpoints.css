@@ -121,6 +121,7 @@
     }
     .window {
         width: 95% !important;
+        height: 95% !important;
     }
     .inboxMsg {
         width: 83% !important;
