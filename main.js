@@ -33,7 +33,7 @@
     SOFTWARE.
 */
 
-alert('BEFORE IMPORT')
+//alert('BEFORE IMPORT')
 
 import { Desktop, lan, device, getClick, mainDesktop, getSelection, inboxMsg } from "./resources/modules/classes.js";
 const {width, orientation, touch, mobile} = device;
