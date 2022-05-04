@@ -13,6 +13,9 @@
     a {
         font-size: 2.5vh !important;
     }
+    main {
+        height: fit-content !important;
+    }
     #jossy_banner {
         font-size: 2.3vh !important;
     }
