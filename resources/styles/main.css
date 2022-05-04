@@ -84,7 +84,6 @@ h2 {
 }
 h2 span {
     font-family: 'Courier Prime', monospace;
-    font-style: italic;
     animation-name: insertionPoint;
     animation-duration: 200ms;
     animation-direction: alternate;
