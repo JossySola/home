@@ -43,6 +43,14 @@ html {
 body {
     color: white;
     font-family: 'Lato', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+    scrollbar-arrow-color: transparent;
+    scrollbar-base-color: transparent;
+    scrollbar-face-color: transparent;
+    -ms-scrollbar-face-color: transparent;
+    -ms-scrollbar-track-color: gray;
+    -ms-scrollbar-arrow-color: transparent;
 }
 a {
     cursor: pointer;
