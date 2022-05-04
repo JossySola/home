@@ -32,9 +32,6 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 */
-import { Desktop, lan, device, getClick, mainDesktop, getSelection, inboxMsg } from "./resources/modules/classes.js";
-const {width, orientation, touch, mobile} = device;
-
 if ( device.touch > 0 ) {
     // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
@@ -45,6 +42,8 @@ if ( device.touch > 0 ) {
     const thirdFolder = document.getElementById('art');
     const inbox = document.getElementById('inbox');
 
+    alert('This must work on iOS as there is not import keyword');
+
     // SET CLICKABLE INBOX
     inbox.onclick = inboxMsg;
 
@@ -54,6 +53,8 @@ if ( device.touch > 0 ) {
     thirdFolder.onclick = function() {desk.openWindow('art')};
 
 } else {
+    import { Desktop, lan, device, getClick, mainDesktop, getSelection, inboxMsg } from "./resources/modules/classes.js";
+    const {width, orientation, touch, mobile} = device;
         // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
