@@ -44,12 +44,12 @@ body {
     color: white;
     font-family: 'Lato', sans-serif;
     scrollbar-width: thin;
-    scrollbar-color: gray transparent;
+    scrollbar-color: #cfcece transparent;
     scrollbar-arrow-color: transparent;
     scrollbar-base-color: transparent;
     scrollbar-face-color: transparent;
     -ms-scrollbar-face-color: transparent;
-    -ms-scrollbar-track-color: gray;
+    -ms-scrollbar-track-color: #cfcece ;
     -ms-scrollbar-arrow-color: transparent;
 }
 a {
