@@ -115,9 +115,12 @@
         max-width: 40% !important;
         font-size: 2.5vh !important;
     }
+    .crystal {
+        width: 95% !important;
+        height: 90vh !important;;
+    }
     .window {
         width: 95% !important;
-        height: 54vh !important;
     }
     .inboxMsg {
         width: 83% !important;
