@@ -48,17 +48,10 @@ if ( device.touch > 0 ) {
     // SET CLICKABLE INBOX
     inbox.onclick = inboxMsg;
 
-    alert('IF CONDITION WORKS');
-    desk.openWindow('adm')
-
-    firstFolder.addEventListener('click', function() { desk.openWindow('adm') });
-    secondFolder.addEventListener('click', function() { desk.openWindow('fullstack') });
-    thirdFolder.addEventListener('click', function() { desk.openWindow('art') });
-
     // OPEN WINDOW IF USER TOUCHES AN ELEMENT
-    /*firstFolder.onclick = function() {desk.openWindow('adm')};
+    firstFolder.onclick = function() {desk.openWindow('adm')};
     secondFolder.onclick = function() {desk.openWindow('fullstack')};
-    thirdFolder.onclick = function() {desk.openWindow('art')};*/
+    thirdFolder.onclick = function() {desk.openWindow('art')};
 
 } else {
         // SET MAIN DESKTOP ENVIRONMENT
