@@ -48,6 +48,7 @@ if ( device.touch > 0 ) {
     // SET CLICKABLE INBOX
     inbox.onclick = inboxMsg;
 
+    alert('IF CONDITION WORKS');
     desk.openWindow('adm')
 
     firstFolder.addEventListener('click', function() { desk.openWindow('adm') });
