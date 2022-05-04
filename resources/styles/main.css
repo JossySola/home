@@ -76,12 +76,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     margin-top: 3rem;
     font-family: 'Source Code Pro', monospace;
+    color: #f7debd;
 }
 h2 {
-    font-family: 'Source Code Pro XLI', monospace;
+    font-family: 'Courier Prime', monospace;
+    color: #f7debd;
 }
 h2 span {
-    font-family: 'Source Code Pro XBI', monospace;
+    font-family: 'Courier Prime', monospace;
     font-style: italic;
     animation-name: insertionPoint;
     animation-duration: 200ms;
