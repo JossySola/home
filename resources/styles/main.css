@@ -89,6 +89,7 @@ h2 span {
     animation-duration: 200ms;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    color: #f7debd;
 }
 header {
     text-align: center;
