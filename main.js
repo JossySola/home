@@ -73,13 +73,13 @@ if ( device.touch > 0 ) {
 
     // SET SELECTION FEATURE IN THE DESKTOP ENVIRONMENT
     desk.name.onmousedown = function() { getClick.push('desktop') };
-    firstFolder.onmousedown = function(event) {const targ = event.path[1].getAttribute('id'); getClick.push(targ)};
-    secondFolder.onmousedown = function(event) {const targ = event.path[1].getAttribute('id'); getClick.push(targ)};
-    thirdFolder.onmousedown = function(event) {const targ = event.path[1].getAttribute('id'); getClick.push(targ)};
+    firstFolder.onmousedown = function() {getClick.push('adm')};
+    secondFolder.onmousedown = function() {getClick.push('fullstack')};
+    thirdFolder.onmousedown = function() {getClick.push('art')};
     desk.name.onmouseup = function () { getSelection() };
 
     // OPEN WINDOW IF USER DOUBLE CLICKS
-    firstFolder.ondblclick = function(event) {const targ = event.path[1].getAttribute('id'); desk.openWindow(targ)};
-    secondFolder.ondblclick = function(event) {const targ = event.path[1].getAttribute('id'); desk.openWindow(targ)};
-    thirdFolder.ondblclick = function(event) {const targ = event.path[1].getAttribute('id'); desk.openWindow(targ)};
+    firstFolder.ondblclick = function() {desk.openWindow('adm')};
+    secondFolder.ondblclick = function() {desk.openWindow('fullstack')};
+    thirdFolder.ondblclick = function() {desk.openWindow('art')};
 };

@@ -32,16 +32,19 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 */
+
 import { fileTree, contentDataBase, jobPeriod } from './content.js';
+
 const { skills, company, period, role, displayRole } = jobPeriod;
 const { adm, fullstack, art } = fileTree;
 const { thisPage } = contentDataBase;
+
 const lan = document.getElementsByTagName('html')[0].getAttribute('lang');
 let device = {
     width: window.screen.width,
     orientation: window.screen.orientation.type,
     touch: window.navigator.maxTouchPoints,
-    mobile: window.navigator.userAgentData.mobile
+    //mobile: window.navigator.userAgentData.mobile  NOT SUPPORTED ON FIREFOX
 };
 let currentWindow = [];
 let listDesks = [];
@@ -667,7 +670,7 @@ class File {
         // SINGLE AND DOUBLE CLICK LISTENER
         const tg = this._target;
         const tn = this._name;
-        if (device.mobile === true || device.touch > 0) {
+        if ( device.touch > 0 ) {
             file.onclick = function() { listDesks[0].openWindow(tg); };
         } else {
             file.addEventListener('mousedown', function() {getClick.push(tn)});
@@ -767,5 +770,6 @@ function inboxMsg(event) {
     thisDesktop.appendChild(msg);
     closeInbox.onclick = function() { msg.remove() };
 }
+
 
 export {Desktop, File, lan, device, getClick, mainDesktop, getSelection, inboxMsg };
