@@ -698,7 +698,7 @@ function getSelection() {
     };   
 };
 
-function inboxMsg(event) {
+function inboxMsg() {
     const pastInbox = document.getElementById('inboxMsg');
     if (pastInbox) {
         pastInbox.remove();
@@ -764,7 +764,7 @@ function inboxMsg(event) {
         msgContent.innerHTML = "Gracias por tu interés en mi portafolio.<br><br>Mi nombre es José María y disfruto mucho las actividades que incluyan crear e innovar. También me caracterizo por ser una persona metódica y analítica y tiendo a seguir muy de cerca las pautas y procedimientos, así como enfocarme en los detalles.<br><br>A continuación te dejo mis redes sociales: <img src='./resources/images/heart.svg' alt=''/>"; 
     } else {
         msgTitle.innerHTML = "Hey!";
-        msgContent.innerHTML = "Thank you for your interest in my portfolio!<br><br>My name is José María and I enjoy activities related to creating and innovating. I'm also known to be a really methodic and analytical person with a tendency to follow guidelines and procedures tightly as well as focusing on details.<br><br>These are some of my social media: <img src='./resources/images/heart.svg' alt=''/>";
+        msgContent.innerHTML = "Thank you for your interest in my portfolio!<br><br>My name is José María and I enjoy activities related to creating and innovating. I'm also known to be a really methodic and analytical person with a tendency to follow guidelines and procedures tightly as well as focusing on details.<br><br>These are some of my work media: <img src='./resources/images/heart.svg' alt=''/>";
     };
 
     thisDesktop.appendChild(msg);
