@@ -32,16 +32,11 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 */
-
-//alert('BEFORE IMPORT')
-
 import { Desktop, lan, device, getClick, mainDesktop, getSelection, inboxMsg } from "./resources/modules/classes.js";
 const {width, orientation, touch} = device;
 
-window.alert('This is outside the condition');
 
 if ( device.touch > 0 ) {
-    alert('This is the MOBILE version')
     // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
@@ -60,7 +55,6 @@ if ( device.touch > 0 ) {
     thirdFolder.onclick = function() {desk.openWindow('art')};
 
 } else {
-    alert('This is the DESKTOP version')
         // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
