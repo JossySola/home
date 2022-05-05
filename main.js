@@ -39,6 +39,7 @@ import { Desktop, lan, device, getClick, mainDesktop, getSelection, inboxMsg } f
 const {width, orientation, touch, mobile} = device;
 
 if ( device.touch > 0 ) {
+    alert('This is the MOBILE version')
     // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
@@ -57,6 +58,7 @@ if ( device.touch > 0 ) {
     thirdFolder.onclick = function() {desk.openWindow('art')};
 
 } else {
+    alert('This is the DESKTOP version')
         // SET MAIN DESKTOP ENVIRONMENT
     const desk = new Desktop('desktop');
     mainDesktop.push(desk);
