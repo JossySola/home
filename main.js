@@ -36,7 +36,9 @@
 //alert('BEFORE IMPORT')
 
 import { Desktop, lan, device, getClick, mainDesktop, getSelection, inboxMsg } from "./resources/modules/classes.js";
-const {width, orientation, touch, mobile} = device;
+const {width, orientation, touch} = device;
+
+window.alert('This is outside the condition');
 
 if ( device.touch > 0 ) {
     alert('This is the MOBILE version')
