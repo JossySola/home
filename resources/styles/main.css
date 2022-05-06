@@ -147,8 +147,7 @@ footer {
     left: 10vw;
     align-self: flex-start;
     width: 30vw;
-    height: 50vh;
-    max-height: fit-content;
+    height: fit-content;
     text-align: left;
     overflow: scroll;
     display: grid;
