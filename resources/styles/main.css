@@ -151,9 +151,10 @@ footer {
     text-align: left;
     overflow: scroll;
     display: grid;
-    grid-template-areas: "inboxBar" 0.5fr
-                         "inboxMsg" 1fr
-                         "inboxMedia" 0.5fr;
+    grid-template: 
+    "inboxBar" 0.5fr
+    "inboxMsg" 1fr
+    "inboxMedia" 0.5fr;
 }
 .inboxMsg::-webkit-scrollbar {
     background-color: transparent;
