@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Kaushan Script', cursive;
     src: url('../fonts/KaushanScript-Regular.ttf');
+    font-display: swap;
 } 
 
 #jossy_banner_about {
