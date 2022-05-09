@@ -56,10 +56,8 @@ let mainDesktop = [];
 
             /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                 PENDING FEATURES AND/OR PENDING ISSUES:
-                    1. MAKE open_File Function for images
-                    2. Picture inbox
-                    3. footer with Copyright, Terms and License
-                    4. Accessibility version
+                    1. Accessibility version
+                    2. iOS compatibility
             ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
     
 
@@ -458,6 +456,7 @@ class Desktop {
             };
             const backBtn = document.getElementById('backtab');
             backBtn.setAttribute('style','visibility: visible');
+            
         } else { // IF THERE NOT AN OPENED WINDOW YET +++++++++++++++++++++++++++++++++++++++++++++++
             //  LOADING PAGE STAGE
             const loadingWindow = document.createElement('div');
