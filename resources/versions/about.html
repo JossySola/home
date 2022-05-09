@@ -39,7 +39,7 @@
             <h5 id="design">Design Process</h5>
             <p>After some thinking I came across the idea of <em>simulating a computer desktop</em> and organize the three categories in folders and with that in mind, I made a <a href="../docs/Normal Version.pdf" target="_blank">Design Template</a> with <strong>&copyMicrosoft Publisher</strong>.</p>
             <br>
-            <p>I began with the <u>Structure of HTML</u>, the <u>Styling with CSS</u>, and also the creation of the images I needed like the <u>folders</u> and <u>file icons</u>, which were make with <strong>&copyInkscape</strong>.</p>
+            <p>I began with the <u>Structure of HTML</u>, the <u>Styling with CSS</u>, and also the creation of the images I needed like the <u>folders</u> and <u>file icons</u>, which were made with <strong>&copyInkscape</strong>.</p>
             <br>
             <p>I chose <strong>&copyInkscape</strong> and more specifically the <strong>SVG format</strong> because I wanted my images to be scalable without compromising their quality.</p>
             <br>
@@ -47,7 +47,7 @@
             <br>
             <p>With <u>CSS Media Queries</u> I targeted the responsiveness needed. However, this time I learnt I could target the devices width directly with a mix of: max-<u>device-width</u> and the <u>orientation:portrait</u> property.</p>
             <br>
-            <p>In addition, the relative measures: <u>rem</u>, <u>vw</u> and <u>vh</u> were the key to successfuly resize content in certain situations. Nonetheless, according to good practices ( <strong>PageSpeed Insights</strong> ), images are elements that are recommended to be set with specific measures.</p>
+            <p>In addition, the relative measures: <u>rem</u>, <u>vw</u> and <u>vh</u> were the key to successfuly resize content in certain situations. Nonetheless, according to good practices ( <strong>&copyGoogle PageSpeed Insights</strong> ), images are elements that are recommended to be set with both specific measure properties (width & height).</p>
             <br>
             <h5 id="interactivity">Interactivity</h5>
             <br>
@@ -55,18 +55,18 @@
             <br>
             <p>The first feature I focused on was the <u class="highlight">Selection feature</u> which highlights the folder/file that is clicked on. However, the challenge I faced with this feature was the fact that when using the Click event, if the folder was clicked, it activated in both the folder and the parent containing the folder ( <em>which later on I read it is part of the capturing/bubbling event phase</em> ).</p>
             <br>
-            <p><strong>My approach:</strong><br>Having in mind I didn't know about capturing/bubbling at the time, I observed that logging the clicks in an array, the first ID in the array was the folder/file and the second item in the array was the parent containing it ( the <u>"Desk"</u>, </em><em>bubbling phase</em> ), so I wrote a function that compares the first item with the parent ID, if both are the same, the function makes all the <em>highlight images</em> hidden, otherwise, it hides all the highlight images and then makes the selected image visible.</p>
+            <p><strong>My approach:</strong><br>Having in mind I didn't know about capturing/bubbling at the time, I observed that logging the clicks in an array, the first ID in the array was the folder/file and the second item in the array was the parent containing it ( the <u>"Desk"</u>, </em><em>bubbling phase</em> ), so I wrote a function that compares the first item with the parent ID, if both are the same, the function makes all the <em>highlight images</em> hidden, otherwise, it hides all the highlight images and then makes the selected image visible. After that, the function empties/resets the array.</p>
             <br>
             <p>The second feature was <u class="highlight">Open Window</u>. The Window is a grid containing two parts: <u>The top window bar</u> and <u>The content space</u>. The top bar containing a Close Tab and a Back Tab. This function is part of the <u>Desk Class</u> and it has various conditions:</p>
             <br>
             <ol>
-                <li>If there is a Window already opened</li>
+                <li>If there is a <u>Window already opened</u></li>
                 <ul>
                     <li>If the folder <u>has no content</u></li>
                     <li>If the action is to <u>open a file</u></li>
                     <li>If the folder <u>has folders inside</u></li>
                 </ul>
-                <li>If the Window is new</li>
+                <li>If the <u>Window is new</u></li>
             </ol>
             <br>
             <p>The third feature to focus on was to <u class="highlight">Create a File</u>, this being part of the <u>File Class</u>, and which is called every time you open a folder.</p>
