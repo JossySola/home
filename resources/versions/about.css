@@ -136,6 +136,11 @@ section * {
     text-align: justify;
 }
 
+footer {
+    margin: 3rem 0;
+    font-size: 2rem;
+}
+
 
 /* CLASSES */
 .highlight {
