@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Jossy Sola website</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../images/at.png">
+        <link rel="stylesheet" type="text/css" href="../styles/banner.css">
+        <link rel="stylesheet" type="text/css" href="./about.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="jossy_banner"><a href="https://jossysola.github.io/home/">@ Jossy Solá</a></div>
+        <h1>Portfolio Website</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#development">Development</a>
+                    <ol>
+                        <li><a href="#design">Design</a></li>
+                        <li><a href="#responsiveness">Responsiveness</a></li>
+                        <li><a href="#interactivity">Interactivity</a></li>
+                    </ol>
+                </li>
+                <li><a href="#copyright">Ownership & Copyright</a></li>
+                <li><a href="#terms">Terms</a></li>
+                <li><a href="#license">License</a></li>
+            </ul>
+
+            <h2 style="align-self: center;">Index</h2>
+        </nav>
+
+        <section id="development">
+            <h3>Development</h3>
+            <br>
+            <p>This project apart from being part of Codecademy full-stack course, is something I wanted to do since the first time I joined the course and the idea I had in mind was to display three categories that I consider are part of my life: The experience I have in <u>Customer Service & Administration</u>, the journey I'm taking with the <u>Full-Stack course</u>, and the <u>interest I have in art</u>.</p>
+            <br>
+            <h5 id="design">Design Process</h5>
+            <p>After some thinking I came across the idea of <em>simulating a computer desktop</em> and organize the three categories in folders and with that in mind, I made a <a href="../docs/Normal Version.pdf" target="_blank">Design Template</a> with <strong>Microsoft Publisher</strong>.</p>
+            <br>
+            <p>I began with the <u>Structure of HTML</u>, the <u>Styling with CSS</u>, and also the creation of the images I needed like the <u>folders</u> and <u>file icons</u>, which were make with <strong>Inkscape</strong>.</p>
+            <br>
+            <p>I chose <strong>Inkscape</strong> and more specifically the <strong>SVG format</strong> because I wanted my images to be scalable without compromising their quality.</p>
+            <br>
+            <h5 id="responsiveness">Responsiveness</h5>
+            <br>
+            <p>With <u>CSS Media Queries</u> I targeted the responsiveness needed. However, this time I learnt I could target the devices width directly with a mix of: max-<u>device-width</u> and the <u>orientation:portrait</u> property.</p>
+            <br>
+            <p>In addition, the relative measures: <u>rem</u>, <u>vw</u> and <u>vh</u> were the key to successfuly resize content in certain situations. Nonetheless, according to good practices ( <strong>PageSpeed Insights</strong> ), images are elements that are recommended to be set with specific measures.</p>
+            <br>
+            <h5 id="interactivity">Interactivity</h5>
+            <br>
+            <p>The scripting of the website is made with <u>JavaScript Vanilla</u>.</p>
+            <br>
+            <p>The first feature I focused on was the <u class="highlight">Selection feature</u> which highlights the folder/file that is clicked on. However, the challenge I faced with this feature was the fact that when using the Click event, if the folder was clicked, it activated in both the folder and the parent containing the folder ( <em>which later on I read it is part of the capturing/bubbling event phase</em> ).</p>
+            <br>
+            <p><strong>My approach:</strong><br>Having in mind I didn't know about capturing/bubbling at the time, I observed that logging the clicks in an array, the first ID in the array was the folder/file and the second item in the array was the parent containing it ( the <u>"Desk"</u>, </em><em>bubbling phase</em> ), so I wrote a function that compares the first item with the parent ID, if both are the same, the function makes all the <em>highlight images</em> hidden, otherwise, it hides all the highlight images and then makes the selected image visible.</p>
+            <br>
+            <p>The second feature was <u class="highlight">Open Window</u>. The Window is a grid containing two parts: <u>The top window bar</u> and <u>The content space</u>. The top bar containing a Close Tab and a Back Tab. This function is part of the <u>Desk Class</u> and it has various conditions:</p>
+            <br>
+            <ol>
+                <li>If there is a Window already opened</li>
+                <ul>
+                    <li>If the folder <u>has no content</u></li>
+                    <li>If the action is to <u>open a file</u></li>
+                    <li>If the folder <u>has folders inside</u></li>
+                </ul>
+                <li>If the Window is new</li>
+            </ol>
+            <br>
+            <p>The third feature to focus on was to <u class="highlight">Create a File</u>, this being part of the <u>File Class</u>, and which is called every time you open a folder.</p>
+            <br>
+            <p>The function creates a Grid element, displaying the file: The first row containing the icon and the second row containing the title of the file. The images depending on the <u>type of file</u>:</p>
+            <br>
+            <ol>
+                <li>Folder</li>
+                <li>Text</li>
+                <li>Web</li>
+                <li>Presentation</li>
+            </ol>
+            <br>
+            <p>The <u class="highlight">content of the files</u> is stored in an external module organized in arrays. The arrays contain different items representing information such as the titles, language, content, target, etc. and the functions use this data to display and create.</p>
+            <br>
+            <p>Furthermore, the project separates the JavaScript usage in <u>three modules</u>:</p>
+            <br>
+            <ol>
+                <li>First Event Listeners</li>
+                <li>Classes and Functions</li>
+                <li>Content Database</li>
+            </ol>
+            <br>
+            <p>The HTML loaded for the client only loads the <u>main.js</u> which size is only 4KB and sets the first Event Listeners.</p>
+            <br>
+            <p>The other two modules are only used when they are required by the <u>main JS</u>.</p>
+            <br>
+            <p><strong>PENDING FEATURES/ISSUES:</strong></p>
+            <br>
+            <ul>
+                <li>JavaScript is not working on iOS platform.</li>
+                <li>Refactor JavaScript Structure</li>
+            </ul>
+        </section>
+
+        <section id="copyright">
+            <h3>Ownership & Copyright</h3>
+            <br>
+            <h4>Ownership</h4>
+            <p>I ("me", "JOSE MARIA SOLA ESTRADA", "JOSÉ MARÍA SOLÁ ESTRADA", "Jossy Solá",
+                "jossysola") solemnly state and affirm with honesty that 
+                <a href="https://github.com/JossySola/home" target="_blank">The Project</a> (the conjunction of Code, Script, Text, Comments, Images, Icons and Styles that makes up the 'Front-End' side of the website https://jossysola.github.io/home/) have been written, designed, debugged, 
+                commented, modified and developed by me from the start to the end, making me the <strong>AUTHOR</strong> of The Project and its components <strong class="emphasis">with exceptions declared in the COPYRIGHT section below</strong>.</p>
+            <br>
+            <h4>Copyright</h4>
+            <p>In terms of the Text Fonts used are as follows:</p>
+            <br>
+            <ul>
+                <li>Text font named <strong>'Lato'</strong> with full credit to <strong>Łukasz Dziedzic</strong>.<br><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL" target="_blank">Open Font License</a></li>
+                <li>Text font named <strong>'Source Code Pro'</strong> with full credit to <strong>Paul D. Hunt</strong>.<br><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL" target="_blank">Open Font License</a></li>
+                <li>Text font named <strong>'Courier Prime'</strong> with full credit to <strong>Alan Dague-Greene</strong>.<br><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL" target="_blank">Open Font License</a></li>
+            </ul>
+            <br>
+            <p>All Text Fonts accessed from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.</p>
+            <br>
+            <p>In terms of the Logos used in the project:</p>
+            <br>
+            <ul>
+                <li>The <strong>'GitHub'</strong> logo icon is an exclusive trademark property of <strong>&copyGitHub, Inc.</strong><br><a href="https://github.com/logos">All rights reserved.</a></li>
+                <li>The <strong>'LinkedIn'</strong> logo icon is an exclusive trademark property of <strong>&copyLinkedIn Corporation and its Affiliates</strong>.<br><a href="https://brand.linkedin.com/policies">All rights reserved.</a></li>
+                <li>The <strong>'Instagram'</strong> logo icon is an exclusive trademark property of <strong>&copyMeta and its Affiliates</strong>.<br><a href="https://www.facebook.com/brand/resources/meta/our-trademarks/">All rights reserved.</a></li>
+            </ul>
+        </section>
+
+        <section id="terms">
+            <h3>Terms</h3>
+            <br>
+            <h4>Personal Information</h4>
+            <br>
+            <p>The <a href="https://jossysola.github.io/home/" target="_blank">Website</a> related to this Document, contains personal information of me, The Author ("I", "me", "my", "JOSÉ MARÍA SOLÁ ESTRADA", "JOSE MARIA SOLA ESTRADA", "Jossy Solá", "jossysola"). This information is truthful in nature and can be verified and used ONLY if the intention is for job hiring purposes.</p>
+            <br>
+            <p>The only aim of The Website is to share my job experience and the projects I have worked on for possible job recruitment. Please <strong>do NOT</strong> use my contact media for advertisement or any other uses unrelated to the main objective.</p>
+        </section>
+
+        <section id="license">
+            <h3>License</h3>
+            <br>
+            <p>MIT License<br><br>
+
+                Copyright (c) 2022 JOSE MARIA SOLA ESTRADA <br><br>
+            
+                Permission is hereby granted, free of charge, to any person obtaining a copy
+                of this software and associated documentation files (the "Software", excluding any personal information contained), to deal
+                in the Software without restriction, including without limitation the rights
+                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                copies of the Software, and to permit persons to whom the Software is
+                furnished to do so, subject to the following conditions:
+                <br><br>
+                The above copyright notice and this permission notice shall be included in all
+                copies or substantial portions of the Software.
+                <br><br>
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                SOFTWARE.</p>
+        </section>
+    </body>
+</html>
