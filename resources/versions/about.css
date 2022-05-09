@@ -72,9 +72,8 @@ nav {
     display: grid;
     grid-template: 
     "index description";
-    padding: 2rem 1.5rem;
-    min-width: 90%;
-    max-width: fit-content;
+    padding: 2rem 1.3vw;
+    width: 90%;
     align-self: center;
     border: 0.15rem solid #888787;
     border-radius: 0.5rem;
@@ -84,6 +83,7 @@ nav ul {
     text-align: left;
     grid-area: index;
     line-height: 2.3rem;
+    margin-left: 0;
 }
 nav ul li {
     list-style: none;
