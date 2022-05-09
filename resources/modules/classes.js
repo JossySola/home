@@ -731,7 +731,8 @@ function inboxMsg() {
     const github = document.createElement('img');
     github.setAttribute('src','./resources/images/github.svg');
     github.setAttribute('style','width:2rem; height:2rem');
-    github.setAttribute('alt','GitHub Logo');
+    github.setAttribute('alt','GitHub® Logo');
+    github.setAttribute('title','GitHub® development platform');
     githubLink.appendChild(github);
 
     const linkedinLink = document.createElement('a');
@@ -742,7 +743,8 @@ function inboxMsg() {
     const linkedin = document.createElement('img');
     linkedin.setAttribute('src','./resources/images/linkedin.svg');
     linkedin.setAttribute('style','width:2rem; height:2rem');
-    linkedin.setAttribute('alt','LinkedIn Logo');
+    linkedin.setAttribute('alt','LinkedIn® Logo');
+    linkedin.setAttribute('title','LinkedIn® professional networking services');
     linkedinLink.appendChild(linkedin);
 
     const instagramLink = document.createElement('a');
@@ -753,7 +755,8 @@ function inboxMsg() {
     const instagram = document.createElement('img');
     instagram.setAttribute('src','./resources/images/instagram.svg');
     instagram.setAttribute('style','width:2rem; height:2rem');
-    instagram.setAttribute('alt','Instagram Logo');
+    instagram.setAttribute('alt','Instagram® Logo');
+    instagram.setAttribute('title','Instagram® social media network');
     instagramLink.appendChild(instagram);
 
     msgMedia.appendChild(githubLink);
