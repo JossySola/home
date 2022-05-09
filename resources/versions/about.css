@@ -106,8 +106,8 @@ nav span {
 section {
     display: grid;
     grid-template: 
-    "title" 1fr
-    "scontent" 1fr;
+    "title"
+    "scontent";
     padding: 2rem 1.5rem;
     width: 90%;
     align-self: center;
@@ -119,10 +119,12 @@ section {
 section h3 {
     grid-area: title;
     text-align: center;
+    line-height: normal;
 }
 
 section h4, h5, h6 {
     text-align: center !important;
+    line-height: normal;
 }
 section ol, ul {
     margin-left: 1.5rem;
