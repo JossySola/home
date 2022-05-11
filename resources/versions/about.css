@@ -13,6 +13,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
 }
 
 a {
@@ -44,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 6rem;
+    margin-top: 5vh;
 }
 h2 {
     font-size: 5rem;
@@ -73,7 +75,7 @@ nav {
     grid-template: 
     "index description";
     padding: 2rem 1.3vw;
-    width: 90%;
+    width: fit-content;
     align-self: center;
     border: 0.15rem solid #888787;
     border-radius: 0.5rem;
@@ -99,8 +101,9 @@ nav ol li {
     font-size: 1.3rem;
     text-align: left !important;
 }
-nav span {
+nav h2 {
     grid-area: description;
+    padding-left: 3vw;
 }
 
 section {
@@ -109,7 +112,7 @@ section {
     "title"
     "scontent";
     padding: 2rem 1.5rem;
-    width: 90%;
+    width: fit-content;
     align-self: center;
     border: 0.15rem solid #888787;
     border-radius: 0.5rem;
