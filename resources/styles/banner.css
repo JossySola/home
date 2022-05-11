@@ -38,7 +38,7 @@
     width: 100%;
     height: fit-content;
     padding: 5px 0;
-    position: relative;
+    position: fixed;
     /*z-index: 10;*/
     top: 0;
 }
