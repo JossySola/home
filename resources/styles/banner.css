@@ -39,7 +39,7 @@
     height: fit-content;
     padding: 5px 0;
     position: fixed;
-    /*z-index: 10;*/
+    z-index: 10;
     top: 0;
 }
 #jossy_banner a {
