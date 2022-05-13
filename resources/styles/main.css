@@ -187,15 +187,9 @@ footer {
 }
 .language {
     background-color: #262626;
-    z-index: 10;
-    position: sticky;
-    top: 4vh;
 }
 .accessibility {
     background-color: #3f3f3f;
-    z-index: 10;
-    position: sticky;
-    top: 4vh;
 }
 
 #desktop {
