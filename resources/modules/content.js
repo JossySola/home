@@ -99,7 +99,7 @@ const fileTree = {
             en: [['Portrait'], [['Portrait'],['folder'],['portrait']]]
         },
             portrait: {
-                es: [['$file'],['gallery'],['portrait1.jpg','sketch1.jpg','sketch2.jpg','portrait2.jpg','portrait3.jpg','sketch3.jpg','portrait4.jpg'],['link'],['es'],['Estilo Retrato']],
+                es: [['$file'],['gallery'],['portrait1.jpg','portrait2.jpg','portrait3.jpg','portrait4.jpg','portrait5.webp'],['link'],['es'],['Estilo Retrato']],
                 en: [['$file'],['gallery'],['portrait1.jpg','sketch1.jpg','sketch2.jpg','portrait2.jpg','portrait3.jpg','sketch3.jpg','portrait4.jpg'],['link'],['en'],['Portrait']]
             },
         escultura: {
