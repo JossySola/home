@@ -95,12 +95,16 @@ const fileTree = {
         en: [['Art Gallery'], [['Sculpting'],['folder'],['escultura']], [['Drawing'],['folder'],['dibujo']]]
     },
         dibujo: {
-            es: [['Estilo Retrato'], [['Retrato'],['folder'],['portrait']]],
-            en: [['Portrait'], [['Portrait'],['folder'],['portrait']]]
+            es: [['Estilo Retrato'], [['Retrato'],['folder'],['portrait']],[['Sketch'],['folder'],['sketch']]],
+            en: [['Portrait'], [['Portrait'],['folder'],['portrait']],[['Sketch'],['folder'],['sketch']]]
         },
             portrait: {
                 es: [['$file'],['gallery'],['portrait1.jpg','portrait2.jpg','portrait3.jpg','portrait4.jpg','portrait5.webp'],['link'],['es'],['Estilo Retrato']],
                 en: [['$file'],['gallery'],['portrait1.jpg','sketch1.jpg','sketch2.jpg','portrait2.jpg','portrait3.jpg','sketch3.jpg','portrait4.jpg'],['link'],['en'],['Portrait']]
+            },
+            sketch: {
+                es: [['$file'],['gallery'],['sketch1.jpg','sketch2.jpg','sketch3.jpg'],['link'],['es'],['Sketch']],
+                en: [['$file'],['gallery'],['sketch1.jpg','sketch2.jpg','sketch3.jpg'],['link'],['en'],['Sketch']]
             },
         escultura: {
             es: [['$file'],['gallery'],['sculpt1.jpg','sculpt2.jpg','sculpt3.jpg'],['link'],['es'],['Escultura']],
