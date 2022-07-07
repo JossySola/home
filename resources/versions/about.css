@@ -130,6 +130,7 @@ section h4, h5, h6 {
 }
 section ol, ul {
     margin-left: 1.5rem;
+    margin-right: -1rem;
     color: black;
     text-align: left !important;
 }
