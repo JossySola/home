@@ -186,6 +186,7 @@ footer {
     text-align: center;
 }
 .language {
+    padding-top: 0.5rem;
     background-color: #262626;
 }
 .accessibility {
